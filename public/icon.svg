@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D14" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Zen Center Glow -->
+  <circle cx="256" cy="256" r="180" fill="url(#centerGlow)" />
+  
+  <!-- Background Ring Track -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#1E293B" stroke-width="14" stroke-linecap="round" opacity="0.6" />
+  
+  <!-- Zen Enso / Progress Arc -->
+  <path d="M 256 96 A 160 160 0 1 1 120 172" fill="none" stroke="url(#ringGrad)" stroke-width="18" stroke-linecap="round" filter="url(#glow)" />
+  
+  <!-- Hourglass / Memento Mori Stylized Dots -->
+  <circle cx="256" cy="96" r="8" fill="#38BDF8" />
+  <circle cx="256" cy="180" r="4" fill="#64748B" opacity="0.8" />
+  <circle cx="256" cy="332" r="4" fill="#64748B" opacity="0.8" />
+  
+  <!-- Central "40" Typography -->
+  <!-- "4" -->
+  <path d="M 226 290 L 226 220 L 180 290 L 244 290 M 226 270 L 226 312" fill="none" stroke="#F8FAFC" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- "0" -->
+  <rect x="268" y="220" width="56" height="92" rx="28" fill="none" stroke="#F8FAFC" stroke-width="16" stroke-linecap="round" />
+  
+  <!-- Small Mindfulness Dot -->
+  <circle cx="344" cy="226" r="6" fill="#10B981" />
+</svg>

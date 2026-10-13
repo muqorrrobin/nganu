@@ -1,0 +1,6 @@
+{
+  "name": "Refleksi 40 - Countdown & Daily Reflection",
+  "description": "Aplikasi Progressive Web App minimalis untuk menghitung mundur sisa waktu menuju usia 40 tahun dan evaluasi refleksi harian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
